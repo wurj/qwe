@@ -1,0 +1,179 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  content: ".";
+  height: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+}
+.pyg_header {
+  padding: 5px;
+  height: 45px;
+}
+.pyg_content {
+  flex: 1;
+  overflow: scroll;
+}
+.pyg_content .pyg_nav {
+  display: flex;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.pyg_content .pyg_nav a {
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+}
+.pyg_content .pyg_nav a img {
+  width: 50%;
+  display: inline-block;
+}
+.pyg_content .pyg_goodsList {
+  padding: 10px;
+}
+.pyg_content .pyg_goodsList .pbox {
+  padding-bottom: 10px;
+}
+.pyg_content .pyg_goodsList .pbox > img {
+  width: 100%;
+  display: block;
+}
+.pyg_content .pyg_goodsList .pbox > .sbox {
+  margin-top: 10px;
+  width: 49%;
+  float: left;
+  background-color: #fff;
+}
+.pyg_content .pyg_goodsList .pbox > .sbox > .pgy_good {
+  display: block;
+}
+.pyg_content .pyg_goodsList .pbox > .sbox > .pgy_good img {
+  width: 100%;
+  display: block;
+}
+.pyg_content .pyg_goodsList .pbox > .sbox > .pgy_good > .pyy_desc {
+  padding: 0 5px;
+  color: #333;
+  font-size: 13px;
+  margin: 5px 0;
+}
+.pyg_content .pyg_goodsList .pbox > .sbox > .pgy_good > .pyg_price {
+  padding: 0 5px;
+  color: red;
+}
+.pyg_content .pyg_goodsList .pbox > .sbox > .pyg_btncate {
+  width: 70%;
+  display: block;
+  margin: 5px auto;
+}
+.pyg_content .pyg_goodsList .pbox > .sbox:nth-of-type(even) {
+  margin-left: 2%;
+}
+.pyg_footer {
+  height: 50px;
+}
