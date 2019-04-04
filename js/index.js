@@ -22,9 +22,9 @@ function banner() {
                 var indiHtml = template('indicatorTemp',res)
                 $('.pyg_banner .mui-slider-indicator').html(indiHtml)
             }
-        }
+        },
 
-        // ,beforeSend:function(xhr, settings){
+        // beforeSend:function(xhr, settings){
             
         // }
     })

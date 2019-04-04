@@ -1,105 +1,74 @@
 @import 'reset.less';
+@import 'common.less';
 
-.layout {
-    width: 100vw;
-    height: 100vh;
-    max-width: 640px;
-    margin: 0 auto;
+.pyg_nav {
     display: flex;
-    flex-direction: column;
-    background-color: #eee;
-}
+    padding: 10px 0;
+    background-color: #fff;
 
-.pyg_header {
-    padding: 5px;
-    height: 45px;
-    // background-color: #eee;
-}
+    a {
+        flex: 1;
+        text-align: center;
+        color: #333;
+        font-size: 14px;
 
-.pyg_content {
-    flex: 1;
-    overflow: scroll;
-    .pyg_nav {
-        display: flex;
-        padding: 10px 0;
-        background-color: #fff;
-
-        a {
-            flex: 1;
-            text-align: center;
-            color: #333;
-            font-size: 14px;
-
-            img {
-                width: 50%;
-                display: inline-block;
-            }
+        img {
+            width: 50%;
+            display: inline-block;
         }
     }
+}
 
-    .pyg_goodsList {
-        padding: 10px;
+.pyg_goodsList {
+    padding: 10px;
 
-        .pbox {
-            padding-bottom:10px;
+    .pbox {
+        padding-bottom: 10px;
 
-            >img {
-                width: 100%;
+        >img {
+            width: 100%;
+            display: block;
+        }
+
+        >.sbox {
+            // min-height: 
+            margin-top: 10px;
+            width: 49%;
+            float: left;
+            background-color: #fff;
+
+            >.pgy_good {
                 display: block;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+                >.pyy_desc {
+                    min-height: 34px;
+                    padding: 0 5px;
+                    color: #333;
+                    font-size: 13px;
+                    margin: 5px 0;
+                }
+
+                >.pyg_price {
+                    padding: 0 5px;
+                    color: red;
+                }
             }
 
-            >.sbox {
-                // min-height: 
-                margin-top: 10px;
-                width: 49%;
-                float: left;
-                background-color: #fff;
-                >.pgy_good {
-                    display: block;
-                    img {
-                        width: 100%;
-                        display: block;
-                    }
-                    > .pyy_desc{
-                        padding: 0 5px;
-                        color: #333;
-                        font-size: 13px;
-                        margin: 5px 0;
-                    }
-                    > .pyg_price{
-                        padding: 0 5px;
-                        color:red;
-                    }
-                }
-                >.pyg_btncate {
-                    width: 70%;
-                    display: block;
-                    margin: 5px auto;
-                }
-                &:nth-of-type(even){
-                    margin-left: 2%;
-                }
-                
+            >.pyg_btncate {
+                width: 70%;
+                display: block;
+                margin: 5px auto;
             }
+
+            &:nth-of-type(even) {
+                margin-left: 2%;
+            }
+
         }
     }
-}
-
-.pyg_footer {
-    height: 50px;
-
-    // a:nth-of-type(3) {
-    //     span:nth-of-type(1) {
-    //         width: 24px;
-    //         height: 24px;
-    //         font-size: 24px;
-    //     }
-
-    //     span:nth-of-type(2) {
-    //         font-size: 11px;
-    //         display: block;
-    //         overflow: hidden;
-    //         text-overflow: ellipsis;
-    //     }
-    // }
 }
