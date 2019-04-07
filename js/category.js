@@ -17,13 +17,13 @@ $(function () {
 
     function getCateList() {
         $.get('categories', function (res) {
-            console.log(res)
+            // console.log(res)
             if (res.meta.status == 200) {
-                dataList = {
+                var cateData = {
                     data: res.data,
                     time: Date.now()
                 }
-                sessionStorage.setItem('dataList', JSON.stringify(dataList))
+                sessionStorage.setItem('dataList', JSON.stringify(cateData))
                 // getCate1()
                 render()
             }

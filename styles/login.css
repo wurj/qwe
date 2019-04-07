@@ -127,6 +127,9 @@ ul {
 .pyg_footer .mui-bar {
   box-shadow: none;
 }
+.pyg_footer .mui-bar .mui-tab-item {
+  color: #000;
+}
 .loadding::before {
   content: "";
   position: fixed;
@@ -150,60 +153,11 @@ ul {
   z-index: 101;
   animation: fa-spin 1s infinite linear;
 }
-.pyg_nav {
-  display: flex;
-  padding: 10px 0;
-  background-color: #fff;
-}
-.pyg_nav a {
+.pyg_login {
   flex: 1;
-  text-align: center;
-  color: #333;
-  font-size: 14px;
+  padding: 55px 10px 10px;
 }
-.pyg_nav a img {
-  width: 50%;
-  display: inline-block;
-}
-.pyg_goodsList {
-  padding: 10px;
-}
-.pyg_goodsList .pbox {
-  padding-bottom: 10px;
-}
-.pyg_goodsList .pbox > img {
+.login_btn_tool button {
   width: 100%;
-  display: block;
-}
-.pyg_goodsList .pbox > .sbox {
-  margin-top: 10px;
-  width: 49%;
-  float: left;
-  background-color: #fff;
-}
-.pyg_goodsList .pbox > .sbox > .pgy_good {
-  display: block;
-}
-.pyg_goodsList .pbox > .sbox > .pgy_good img {
-  width: 100%;
-  display: block;
-}
-.pyg_goodsList .pbox > .sbox > .pgy_good > .pyy_desc {
-  min-height: 34px;
-  padding: 0 5px;
-  color: #333;
-  font-size: 13px;
-  margin: 5px 0;
-}
-.pyg_goodsList .pbox > .sbox > .pgy_good > .pyg_price {
-  padding: 0 5px;
-  color: red;
-}
-.pyg_goodsList .pbox > .sbox > .pyg_btncate {
-  width: 70%;
-  display: block;
-  margin: 5px auto;
-}
-.pyg_goodsList .pbox > .sbox:nth-of-type(even) {
-  margin-left: 2%;
+  margin-top: 20px;
 }

@@ -150,60 +150,85 @@ ul {
   z-index: 101;
   animation: fa-spin 1s infinite linear;
 }
-.pyg_nav {
-  display: flex;
-  padding: 10px 0;
-  background-color: #fff;
-}
-.pyg_nav a {
+.pyg_goodsMain {
   flex: 1;
-  text-align: center;
-  color: #333;
-  font-size: 14px;
 }
-.pyg_nav a img {
-  width: 50%;
-  display: inline-block;
+.pyg_goodsMain .mui-off-canvas-right .search_warp .search_bar {
+  padding: 5px;
+  background-color: #dedede;
 }
-.pyg_goodsList {
-  padding: 10px;
+.pyg_goodsMain .mui-off-canvas-right .search_warp .search_bar .query_txt {
+  height: 34px;
+  padding: 0;
+  margin-bottom: 0;
+  text-indent: 5px;
 }
-.pyg_goodsList .pbox {
-  padding-bottom: 10px;
+.pyg_goodsMain .mui-off-canvas-right .search_warp .search_bar .query_btn {
+  width: 80px;
+  position: absolute;
+  background-color: #0094ff;
+  border-radius: 0 5px 5px 0;
+  top: 5px;
+  right: 5px;
+  height: 34px;
+  color: #fff;
 }
-.pyg_goodsList .pbox > img {
-  width: 100%;
-  display: block;
+.pyg_goodsMain .mui-off-canvas-right .history_list {
+  background-color: #fff;
+  min-height: 50px;
+  padding: 5px;
 }
-.pyg_goodsList .pbox > .sbox {
-  margin-top: 10px;
-  width: 49%;
-  float: left;
+.pyg_goodsMain .mui-off-canvas-right .searchList {
+  padding: 0 10px;
   background-color: #fff;
 }
-.pyg_goodsList .pbox > .sbox > .pgy_good {
-  display: block;
+.pyg_goodsMain .mui-off-canvas-right .searchList a {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #333;
 }
-.pyg_goodsList .pbox > .sbox > .pgy_good img {
+.pyg_goodsMain header {
+  background-color: #0094ff;
+}
+.pyg_goodsMain header h1 {
+  color: #fff;
+}
+.pyg_goodsMain header .mui-icon {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.pyg_goodsMain .leftList li {
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+.pyg_goodsMain .leftList a {
   width: 100%;
   display: block;
+  padding: 5px 0;
 }
-.pyg_goodsList .pbox > .sbox > .pgy_good > .pyy_desc {
-  min-height: 34px;
-  padding: 0 5px;
-  color: #333;
-  font-size: 13px;
-  margin: 5px 0;
+.pyg_goodsMain .leftList a .leftItem {
+  float: left;
+  width: 50%;
 }
-.pyg_goodsList .pbox > .sbox > .pgy_good > .pyg_price {
-  padding: 0 5px;
-  color: red;
-}
-.pyg_goodsList .pbox > .sbox > .pyg_btncate {
+.pyg_goodsMain .leftList a .leftItem img {
+  margin: 0 auto;
   width: 70%;
   display: block;
-  margin: 5px auto;
 }
-.pyg_goodsList .pbox > .sbox:nth-of-type(even) {
-  margin-left: 2%;
+.pyg_goodsMain .leftList a .rightItem {
+  padding: 20px 0;
+  float: right;
+  width: 50%;
+}
+.pyg_goodsMain .leftList a .rightItem .goods_name {
+  color: #666;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+.pyg_goodsMain .leftList a .rightItem .goods_price {
+  color: red;
+  font-size: 20px;
 }
