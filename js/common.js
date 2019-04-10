@@ -31,4 +31,10 @@ $(function(){
         }
         return obj
     }})
+
+    // $('.toCart').on('tap',function(){
+    //     console.log(1)
+    //     // $.targets.action = false
+    // })
+    // console.log(1)
 })

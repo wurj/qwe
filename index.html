@@ -62,7 +62,7 @@
                     <span class="mui-icon mui-icon-list"></span>
                     <span class="mui-tab-label">分类</span>
                 </a>
-                <a class="mui-tab-item" href="/">
+                <a class="mui-tab-item" href="./views/cart.html" class="toCart">
                     <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
                     <span class="mui-tab-label">购物车</span>
                 </a>
@@ -93,13 +93,13 @@
             <img src="{{value.group_img}}" alt="">
             {{each value.goods v i}}
                 <div class="sbox">
-                    <a href="javascript:;" class="pgy_good">
+                    <a href="./views/goodsDetail.html?goods_id={{v.goods_id}}" class="pgy_good">
                         <img src="{{v.goods_small_logo}}"
                             alt="">
                         <div class="pyy_desc mui-ellipsis-2">{{v.goods_name}}</div>
                         <div class="pyg_price">￥{{v.goods_price}}</div>
                     </a>
-                    <a href="javascript:;" class="pyg_btncate mui-btn mui-btn-primary mui-btn-outlined">找相似</a>
+                    <a href="./views/goodsList.html?cid={{v.cat_id}}" class="pyg_btncate mui-btn mui-btn-primary mui-btn-outlined">找相似</a>
                 </div>
             {{/each}}
         </div>

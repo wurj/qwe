@@ -1,4 +1,6 @@
 $(function () {
+    // mui('.mui-input-row input').input(); 
+
     $('#login_btn').on('tap', function () {
         var obj = {}
         obj.username = $('.username').val()
@@ -20,7 +22,7 @@ $(function () {
             data: obj,
             dataType: 'json',
             success: function (res) {
-                // console.log(res)
+                console.log(res)
                 if (res.meta.status == 200) {
                     sessionStorage.setItem('pyg_token',res.data.token);
                     var redirectUrl = $.getParameter(location.search).redirectUrl
@@ -35,5 +37,14 @@ $(function () {
                 }
             }
         })
+    })
+
+
+    $('.pyg_back').on('tap',function(){
+        console.log(1)
+        history.go(-2)
+    })
+    $('.pyg_register').on('tap',function(){
+        location.href = './register.html'
     })
 })

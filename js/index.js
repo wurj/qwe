@@ -35,7 +35,7 @@ function goodsList(){
         url:'home/goodslist',
         dataType:'json',
         success:function(res){
-            // console.log(res)
+            console.log(res)
             if (res.meta.status == 200) {
                 var html = template('goodsTemp',res)
                 $('.pyg_goodsList').html(html)

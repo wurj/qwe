@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" method="GET">
+        名字: <input type="text" name="username">
+        <button type="button">qw</button>
+        <input type="button">
+
+    </form> -->
+    <div data-q="{cat_id: 5, goods_id: 43986, goods_name: '海信(Hisense)LED55MU9600X3DUC 55英寸 4K超高清量子点电视 ULED画质 VIDAA系统', goods_number: 100, goods_price: 13999}"></div>
+    <script src="../lib/zepto/zepto.js"></script>
+    <script>
+        var a = $('div').data('q')
+        a.c = 3
+        console.log(a)
+    </script>
+</body>
+</html>

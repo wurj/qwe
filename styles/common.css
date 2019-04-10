@@ -21,7 +21,10 @@
 .pyg_footer .mui-bar {
   box-shadow: none;
 }
-.pyg_footer .mui-bar .mui-tab-item {
+.pyg_footer .mui-bar.mui-active {
+  color: #007aff;
+}
+.pyg_footer .mui-tab-item {
   color: #000;
 }
 .loadding::before {

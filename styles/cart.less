@@ -1,0 +1,142 @@
+@import 'reset.less';
+@import 'common.less';
+
+#header {
+    .mui-btn {
+        top: 5px;
+    }
+}
+
+.pyg_cart {
+    flex: 1;
+
+    .mui-scroll-wrapper {
+        top: 44px;
+        bottom: 50px;
+
+        // background-color: #fff;
+        .pyg_view {
+            padding: 10px;
+
+            .cart_address {
+                // margin-top: 10px;
+                > div:nth-of-type(1) {
+                    color: #888;
+                    font-size: 13px;
+                    margin: 4px 0;
+                }
+                >div:nth-of-type(2){
+                    background-color: #fff;
+                    display: flex;
+                    height: 50px;
+                    .left {
+                        
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .fa{
+                            font-size: 25px;
+                            color: #333;
+                            font-weight: bold;
+                        }
+                    }
+                    .right {
+                        flex: 5;
+                        font-size: 12px;
+                        color: #888;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        > div{
+                            font-size: 16px;
+                            color:#333;
+                        }
+                    }
+                    .selectAddress {
+                        color: #007aff;
+                        line-height: 50px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .cart_price{
+                margin:20px 0;
+                > div:nth-of-type(1) {
+                    color: #888;
+                    font-size: 13px;
+                    margin: 4px 0;
+                }
+                .cart_price_content {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 10px;
+                    height: 50px;
+                    line-height: 50px;
+                    background-color: #fff;
+                    .totol_price_wrap{
+                        color: #f00;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .pyg_order {
+                margin-top: 3px;
+                > div:nth-of-type(1) {
+                    color: #888;
+                    font-size: 13px;
+                    margin: 4px 0;
+                }
+                .order_list {
+                    background-color: #fff;
+                    .order_single {
+                        // height: 100px;
+                        padding:10px 0;
+                        display: flex;
+                        border-bottom: 1px solid #000;
+                        .mui-left {
+                            flex:2;
+                            input{
+                                margin-top: 30px;
+                            }
+                            label {
+                                display: block;
+                                padding: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .oImg {
+                            flex:3;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 90%;
+                                display: block;
+                            }
+                        }
+                        > div:nth-of-type(3) {
+                            flex: 6;
+                            font-size: 13px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            // align-content: center;
+                            align-items: center;
+                            .goods_num {
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.eleToggle {
+    .pyg_orderDel,.mui-checkbox {
+        display: none
+    }
+}

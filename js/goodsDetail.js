@@ -15,8 +15,24 @@ $(function () {
         success: function (res) {
             // console.log(res)
             if (res.meta.status == 200) {
-                var {cat_id,goods_id,goods_name,goods_number,goods_price,goods_small_logo,goods_weight} = res.data
-                goodsInfo = {cat_id,goods_id,goods_name,goods_number,goods_price,goods_small_logo,goods_weight}
+                var {
+                    cat_id,
+                    goods_id,
+                    goods_name,
+                    goods_number,
+                    goods_price,
+                    goods_small_logo,
+                    goods_weight
+                } = res.data
+                goodsInfo = {
+                    cat_id,
+                    goods_id,
+                    goods_name,
+                    goods_number,
+                    goods_price,
+                    goods_small_logo,
+                    goods_weight
+                }
                 // console.log(goodsInfo)
 
                 var html = template('gdTemp', res.data)
@@ -29,7 +45,7 @@ $(function () {
             }
         }
     })
-    $('.btn-addCart').on('tap',function(){
+    $('.btn-addCart').on('tap', function () {
         // console.log(location.href)
         // console.log(1)
         // window.location.href = './login.html'
@@ -41,22 +57,30 @@ $(function () {
         if (!mytoken) {
             window.location.href = './login.html?redirectUrl=' + escape(location.href)
 
-        } 
+        }
         // 2.如果有token,那么就发送请求
         else {
             $.ajax({
-                type:'post',
-                url:'my/cart/add',
-                data : goodsInfo,
-                dataType:'json',
-                success:function(res) {
+                type: 'post',
+                url: 'my/cart/add',
+                data: {
+                    info: JSON.stringify(goodsInfo)
+                },
+                dataType: 'json',
+                success: function (res) {
                     console.log(res)
                     // 3.接收返回结果，如果是token过期，则重新登陆--重定向到登陆页
                     if (res.meta.status == 401) {
                         // console.log(1)
                         window.location.href = './login.html?redirectUrl=' + escape(location.href)
                     } else {
-                        console.log('ok')
+                        mui.confirm('添加成功，是否查看购物车', '温馨提示', ['跳转', '取消'], function (e) {
+                            if (e.index == 0) {
+                                location.href = './cart.html'
+                            } else {
+                                mui.toast('111')
+                            }
+                        })
                     }
                 }
             })
