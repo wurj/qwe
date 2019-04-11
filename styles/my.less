@@ -1,0 +1,43 @@
+@import 'reset.less';
+@import 'common.less';
+.pyg_view {
+    padding: 44px 10px 10px;
+    flex:1;
+    overflow: scroll;
+    .pyg_userinfo {
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        .mui-icon{
+            font-size: 40px;
+        }
+        .user_email {
+            font-size: 13px;
+        }
+    }
+    .pgy_order {
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        .order_title {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .order_tabs {
+            display: flex;
+            a {
+                padding: 5px 0;
+                text-align: center;
+                flex:1;
+                >.fa {
+                    font-size: 25px;
+                }
+                .item_name {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .pyg_contack {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,199 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  content: ".";
+  height: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+}
+.pyg_header {
+  padding: 5px;
+  height: 45px;
+}
+.pyg_content {
+  flex: 1;
+  overflow: scroll;
+}
+.pyg_footer {
+  height: 50px;
+}
+.pyg_footer .mui-bar {
+  box-shadow: none;
+}
+.pyg_footer .mui-bar.mui-active {
+  color: #007aff;
+}
+.pyg_footer .mui-tab-item {
+  color: #000;
+}
+.loadding::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
+  z-index: 100;
+}
+.loadding::after {
+  font: normal normal normal 14px/1 Muiicons;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 50px;
+  color: #333;
+  content: "\e464";
+  z-index: 101;
+  animation: fa-spin 1s infinite linear;
+}
+.pyg_view {
+  padding: 44px 10px 10px;
+  flex: 1;
+  overflow: scroll;
+}
+.pyg_view .pyg_userinfo {
+  margin-top: 15px;
+  border: 1px solid #ccc;
+}
+.pyg_view .pyg_userinfo .mui-icon {
+  font-size: 40px;
+}
+.pyg_view .pyg_userinfo .user_email {
+  font-size: 13px;
+}
+.pyg_view .pgy_order {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.pyg_view .pgy_order .order_title {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.pyg_view .pgy_order .order_tabs {
+  display: flex;
+}
+.pyg_view .pgy_order .order_tabs a {
+  padding: 5px 0;
+  text-align: center;
+  flex: 1;
+}
+.pyg_view .pgy_order .order_tabs a > .fa {
+  font-size: 25px;
+}
+.pyg_view .pgy_order .order_tabs a .item_name {
+  margin-top: 5px;
+}
+.pyg_view .pyg_contack {
+  margin: 10px 0;
+}
